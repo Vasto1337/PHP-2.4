@@ -8,7 +8,7 @@ if (!isAuthorized())
 if (isset($_POST) && isset($_FILES) && isset($_FILES['testfile'])) {
     $file_name = $_FILES['testfile']['name'];
     $tmp_file = $_FILES['testfile']['tmp_name'];
-    $uploads_dir = 'test3/';
+    $uploads_dir = 'test-2/';
     $path_info = pathinfo($uploads_dir . $file_name);
     if ($path_info['extension'] === 'json') {
         move_uploaded_file($tmp_file, $uploads_dir . $file_name);
