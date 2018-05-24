@@ -4,7 +4,7 @@ if (!isAuthorized())
 {
     location('index');
 }
-$file_list = glob('test3/*.json');
+$file_list = glob('test-2/*.json');
 foreach ($file_list as $key => $file) {
     if ($key == $_GET['test']) {
         unlink($file);
