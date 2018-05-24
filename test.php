@@ -1,6 +1,6 @@
 <?php
 require_once 'core.php';
-$file_list = glob('test3/*.json');
+$file_list = glob('test-2/*.json');
 $test = [];
 foreach ($file_list as $key => $file) {
     if ($key == $_GET['test']) {
